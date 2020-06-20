@@ -78,7 +78,7 @@ console.log(getUsersWithFriend(users, 'Goldie Gentry'));
 
 //TASK-9***************************************
 const getNamesSortedByFriendsCount = (users) => {
-  return users
+  return [...users]
     .sort(
       (prevUser, nextUser) => prevUser.friends.length - nextUser.friends.length,
     )
